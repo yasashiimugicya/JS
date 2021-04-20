@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>10.2　ビルトイン・オブジェクト（Arrayオブジェクト）</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var list1 = new Array(10, 20, 30, 40);
+
+document.write("変換前<br>");
+
+for (var i = 0; i < list1.length; i++) {
+	document.write(list1[i] + "<br>");
+}
+
+var list2 = list1.slice(1, 3);
+
+document.write("変換後<br>");
+
+for (var i = 0; i < list2.length; i++) {
+	document.write(list2[i] + "<br>");
+}
+</script>
+
+</body>
+</html>

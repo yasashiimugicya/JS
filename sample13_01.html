@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>13.3　DOMオブジェクト</title>
+
+<script type="text/javascript">
+function f() {
+	var strElem = document.getElementById("str");
+	var displayElem = document.getElementById("display");
+	
+	var s = strElem.value;
+	
+	displayElem.innerHTML = s;
+	strElem.value = "";
+}
+</script>
+
+</head>
+<body>
+<div id="display">文字を入力してボタンを押してください。</div>
+<input type="text" id="str">
+<br>
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>

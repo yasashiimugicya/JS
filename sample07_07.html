@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.2　エフェクト（toggleメソッド）</title>
+
+<link type="text/css" rel="stylesheet" href="./../jquery-ui.min.css" />
+<script type="text/javascript" src="./../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./../jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#btn").click(function() {
+		$("img").toggle("highlight", {"color" : "red"}, 2000);
+		
+		var label = $("#btn").val() === "表示" ? "非表示" : "表示";
+		$("#btn").val(label);
+	});
+});
+</script>
+
+</head>
+<body>
+<input type="button" value="非表示" id="btn">
+<br>
+<img src="./../star.gif">
+</body>
+</html>

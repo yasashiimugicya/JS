@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>9.3　Ajax用メソッド</title>
+
+<script type="text/javascript" src="./../jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#btn").click(function() {
+		var name = $("#NAME").val();
+		var age = $("#AGE").val();
+		
+		var params = {"NAME" : name, "AGE" : age};
+		
+		$.post("receive09_02.jsp", params, function(response) {
+			$("div").html(response);
+		});
+	});
+});
+</script>
+
+</head>
+<body>
+名前：<input type="text" id="NAME"><br>
+年齢：<input type="text" id="AGE"><br>
+<input type="button" value="送信" id="btn">
+
+<div></div>
+</body>
+</html>

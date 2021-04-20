@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>13.3　DOMオブジェクト</title>
+
+<script type="text/javascript">
+function f(judge) {
+	var items = document.getElementsByName("item");
+	
+	for (var i = 0; i < items.length; i++) {
+		items[i].checked = judge;
+	}
+}
+</script>
+
+</head>
+<body>
+<input type="checkbox" name="item">選択項目１<br>
+<input type="checkbox" name="item">選択項目２<br>
+<input type="checkbox" name="item">選択項目３<br>
+<br>
+<input type="button" value="全選択" onClick="f(true);">
+<input type="button" value="非選択" onClick="f(false);">
+</body>
+</html>

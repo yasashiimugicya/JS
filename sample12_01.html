@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12.2　DOMオブジェクト</title>
+
+<script type="text/javascript">
+function f() {
+	var s1 = document.body.childNodes[1].childNodes[0].nodeValue;
+	var s2 = document.body.childNodes[2].nodeValue;
+	
+	window.alert(s1 + "\n" + s2);
+}
+</script>
+
+</head>
+<body>
+<h1>文字データ１</h1>
+文字データ２
+<br>
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>

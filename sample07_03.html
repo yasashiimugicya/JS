@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.2　ウィジェット（accordionメソッド）</title>
+
+<link type="text/css" rel="stylesheet" href="./../jquery-ui.min.css" />
+<script type="text/javascript" src="./../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./../jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#main").accordion({header: "h3"});
+});
+</script>
+
+</head>
+<body>
+<div id="main" style="width : 300px;">
+	<div>
+		<h3>チームA</h3>
+		<div>本拠地をX球場に置くプロ野球球団です。</div>
+	</div>
+	<div>
+		<h3>チームB</h3>
+		<div>本拠地をY球場に置くプロ野球球団です。</div>
+	</div>
+	<div>
+		<h3>チームC</h3>
+		<div>本拠地をZ球場に置くプロ野球球団です。</div>
+	</div>
+</div>
+</body>
+</html>

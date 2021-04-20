@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>12.2　DOMオブジェクト</title>
+
+<script type="text/javascript">
+function f() {
+	var elem = document.body.childNodes[1];
+	
+	var type = elem.type;
+	var value = elem.value;
+	
+	window.alert("type：" + type + "\n" + "value：" + value);
+}
+</script>
+
+</head>
+<body>
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>

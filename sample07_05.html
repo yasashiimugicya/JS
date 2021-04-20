@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7.2　ウィジェット（sliderメソッド）</title>
+
+<link type="text/css" rel="stylesheet" href="./../jquery-ui.min.css" />
+<script type="text/javascript" src="./../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./../jquery-ui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#main").slider({
+		min : 0,
+		max : 50,
+		change : function(e, ui){
+			$("#label").html(ui.value);
+		}
+	});
+});
+</script>
+
+</head>
+<body>
+<div style="width : 500px">
+	<div id="main"></div>
+	現在の値：<span id="label"></span>
+</div>
+</body>
+</html>
